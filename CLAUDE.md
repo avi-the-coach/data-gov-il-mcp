@@ -14,7 +14,9 @@ Make Israeli government data easily accessible to AI assistants for analysis, in
 
 ## Architecture Foundation
 
-**📋 MUST READ**: `ARCHITECTURE.md` contains the complete technical specification:
+**📋 MUST READ**: Key project documents:
+- **`ARCHITECTURE.md`**: Complete technical specification and system design
+- **`IMPLEMENTATION.md`**: Detailed Phase 1 execution plan with task breakdown
 - **System Architecture**: 4-layer design (Tools → Service → Data → API)
 - **20+ MCP Tools**: Across discovery, access, analytics, and utilities
 - **3-Phase Implementation**: Essential → Enhanced → Advanced features
@@ -65,10 +67,11 @@ Focus on these **5 core MCP tools** first:
 - **Commits**: Use conventional commits (feat:, fix:, docs:, etc.)
 
 ### Before You Start Coding
-1. **Read ARCHITECTURE.md** - Full technical specification
-2. **Check Current Branch** - Create feature branch if needed
-3. **Review Phase Plan** - Focus on Phase 1 essential tools first
-4. **Test API Access** - Verify data.gov.il connectivity
+1. **Read ARCHITECTURE.md** - Full technical specification and system design
+2. **Read IMPLEMENTATION.md** - Phase 1 detailed execution plan and task breakdown
+3. **Check Current Branch** - Create feature branch if needed
+4. **Review Current Epic/Task** - Follow implementation plan priorities
+5. **Test API Access** - Verify data.gov.il connectivity
 
 ## Key Architectural Decisions
 
@@ -230,8 +233,9 @@ LOG_LEVEL=info
 ### When You Return to This Project
 1. **Read This File First** - Get project context quickly
 2. **Check ARCHITECTURE.md** - Review technical specifications
-3. **Review Git Status** - See current progress and branch
-4. **Continue Implementation** - Follow 3-phase plan
+3. **Check IMPLEMENTATION.md** - Review detailed Phase 1 execution plan
+4. **Review Git Status** - See current progress and branch
+5. **Continue Implementation** - Follow implementation plan task priorities
 
 ### Common Commands
 ```bash
@@ -275,9 +279,10 @@ git branch -v                 # Current branch info
 
 When continuing work:
 1. **Review current todo list** (if using TodoWrite tool)
-2. **Read relevant sections** of ARCHITECTURE.md
+2. **Read relevant sections** of ARCHITECTURE.md and IMPLEMENTATION.md
 3. **Check git status** and current branch
-4. **🔴 TDD FIRST**: Always write failing tests before implementation
-5. **Focus on Phase 1 implementation** following strict TDD methodology
+4. **Identify current Epic/Task** from IMPLEMENTATION.md plan
+5. **🔴 TDD FIRST**: Always write failing tests before implementation
+6. **Follow implementation plan** priorities and sub-agent deployment strategy
 
 The goal is to make Israeli government data easily accessible through AI assistants - keep this mission in mind with every implementation decision.
