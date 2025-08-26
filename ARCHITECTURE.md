@@ -396,13 +396,78 @@ npm run dev
 
 ---
 
+## Repository & Version Control
+
+### GitHub Repository
+- **Repository**: [avi-the-coach/data-gov-il-mcp](https://github.com/avi-the-coach/data-gov-il-mcp)
+- **Main Branch**: `main`
+- **License**: MIT (recommended for open source government data tools)
+
+### Git Workflow
+```bash
+# Clone repository
+git clone https://github.com/avi-the-coach/data-gov-il-mcp.git
+cd data-gov-il-mcp
+
+# Set up development branch
+git checkout -b feature/your-feature-name
+
+# Make changes and commit
+git add .
+git commit -m "feat: your feature description"
+
+# Push to GitHub
+git push -u origin feature/your-feature-name
+
+# Create Pull Request on GitHub
+```
+
+### Branch Strategy
+- **`main`**: Production-ready code
+- **`develop`**: Integration branch for features
+- **`feature/*`**: Individual feature development
+- **`hotfix/*`**: Critical bug fixes
+- **`release/*`**: Release preparation
+
+### Commit Convention
+Following [Conventional Commits](https://www.conventionalcommits.org/):
+```
+feat: add new dataset search functionality
+fix: resolve cache invalidation issue
+docs: update API documentation
+style: format code with prettier
+refactor: restructure error handling
+test: add unit tests for CKAN client
+chore: update dependencies
+```
+
 ## Getting Started
 
 Ready to implement? Start with:
-1. Review this architecture document
-2. Set up the development environment
-3. Begin Phase 1 implementation
-4. Test with basic search functionality
-5. Iterate based on user feedback
+1. **Clone Repository**: `git clone https://github.com/avi-the-coach/data-gov-il-mcp.git`
+2. **Review Architecture**: Study this document thoroughly
+3. **Set up Environment**: Initialize Node.js project and dependencies
+4. **Begin Phase 1**: Implement core search and discovery tools
+5. **Test Integration**: Verify CKAN API connectivity
+6. **Iterate**: Based on testing and user feedback
 
-For questions or clarifications, refer to the implementation guide in `IMPLEMENTATION.md` (to be created).
+### Development Setup
+```bash
+# Clone and setup
+git clone https://github.com/avi-the-coach/data-gov-il-mcp.git
+cd data-gov-il-mcp
+
+# Install dependencies (after package.json creation)
+npm install
+
+# Start development server
+npm run dev
+
+# Run tests
+npm test
+
+# Build for production
+npm run build
+```
+
+For detailed implementation steps, refer to the implementation guide in `IMPLEMENTATION.md` (to be created).
