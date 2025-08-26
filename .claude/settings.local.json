@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:info.data.gov.il)",
+      "WebFetch(domain:info.data.gov.il)",
+      "WebFetch(domain:maintenance.gov.il)",
+      "WebSearch",
+      "WebFetch(domain:data.gov.il)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm config get:*)",
+      "Bash(node:*)",
+      "Bash(del debug-search.js)",
+      "Bash(rm:*)",
+      "mcp__data-gov-il__search_datasets"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
