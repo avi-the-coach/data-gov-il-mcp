@@ -145,6 +145,71 @@ describe('search_datasets', () => {
 3. **🔵 Refactor**: Clean up code while tests stay green
 4. **🔁 Repeat**: For each MCP tool and component
 
+## Sub-Agent Utilization Strategy
+
+**🤖 Strategic Use**: Deploy sub-agents for complex, multi-step tasks that benefit from specialized focus.
+
+### When to Use Sub-Agents
+
+#### ✅ High-Value Sub-Agent Tasks
+- **Complex Research**: Deep CKAN API behavior analysis, edge cases, Hebrew text handling
+- **Multi-Component Integration**: Cache + Rate Limiter + Error Handler + MCP Protocol
+- **Comprehensive Testing**: End-to-end test suites with mocks, fixtures, and integration scenarios
+- **Performance Engineering**: Load testing, optimization, memory profiling across all tools
+- **Quality Validation**: Full user journey testing, compatibility verification
+
+#### ❌ Direct Implementation Tasks
+- **Simple Unit Tests**: Individual function tests, basic validation
+- **Single Component Code**: Basic API client methods, TypeScript interfaces
+- **Straightforward Features**: Simple MCP tool implementations following existing patterns
+
+### Sub-Agent Deployment by Phase
+
+#### Phase 1: Foundation
+- **Sub-Agent**: "Setup comprehensive TDD framework with Jest, TypeScript, mocks, and integration testing"
+- **Sub-Agent**: "Implement robust CKAN API client with full error handling, retry logic, and Hebrew text support"
+- **Direct**: Individual MCP tool implementations (search_datasets, get_dataset_details, etc.)
+
+#### Phase 2: Enhancement  
+- **Sub-Agent**: "Design and implement multi-level caching architecture with Redis, invalidation, and performance monitoring"
+- **Sub-Agent**: "Build comprehensive performance testing suite with load testing and optimization recommendations"
+- **Direct**: Tool enhancements, additional features
+
+#### Phase 3: Advanced Features
+- **Sub-Agent**: "Implement advanced analytics tools with complex data processing and visualization"
+- **Sub-Agent**: "Build production monitoring and observability with metrics, logging, and alerting"
+
+### Sub-Agent Task Characteristics
+
+#### Use Sub-Agents When Task Involves:
+- **3+ interconnected components** working together
+- **Research requiring multiple rounds** of investigation and analysis  
+- **Complex configuration** with multiple dependencies and edge cases
+- **Cross-cutting concerns** affecting multiple parts of the system
+- **Performance optimization** requiring systematic analysis and testing
+
+#### Handle Directly When Task Is:
+- **Single-purpose functions** with clear inputs/outputs
+- **Following established patterns** already defined in codebase
+- **Simple CRUD operations** or basic data transformations
+- **Incremental additions** to existing components
+
+### Collaboration Protocol
+
+#### Sub-Agent Handoff Process:
+1. **Define Clear Scope**: Specific deliverables and success criteria
+2. **Provide Context**: Relevant architecture docs, existing code, constraints
+3. **Set Expectations**: Timeline, quality standards, integration requirements
+4. **Review Results**: Validate deliverables meet project standards
+5. **Integration**: Merge sub-agent work into main codebase following TDD principles
+
+#### Quality Standards for Sub-Agent Work:
+- **TDD Compliance**: All code must have tests written first
+- **Documentation**: Clear comments and documentation for complex logic
+- **TypeScript**: Full type safety with proper interfaces
+- **Error Handling**: Comprehensive error scenarios covered
+- **Performance**: Meets defined performance benchmarks
+
 ## Deployment Considerations
 
 ### Environment Variables
